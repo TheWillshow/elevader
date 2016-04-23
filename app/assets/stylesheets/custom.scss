@@ -1,0 +1,269 @@
+@import 'foundation_and_overrides';
+@import url(//fonts.googleapis.com/css?family=Roboto:400,500,300,100,700,900);
+
+//// Splash
+#splashscreen {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 90%;
+  margin: auto;
+}
+
+.splashscreenimg img {
+  display: block;
+  margin: 0 auto;
+}
+
+#splashtitle {
+  position: absolute;
+  top: 200px;
+  left: 10.8%;
+  width: 100%;
+
+  #titletext {
+    color: white;
+    font: bold 24px/45px;
+    font-family: 'Play';
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+  }
+}
+
+#splashscreen img.wide {
+  max-width: auto;
+  max-height: auto;
+  height: auto;
+}
+////
+
+//// top bar stuff
+.top-bar-section ul li > a {
+  font-family: "Play" !important;
+  font-size: large !important;
+}
+
+.name h1 {
+  font-family: 'Play' !important;
+}
+
+.elevaderfont{
+  font-family: 'Play' !important;
+}
+
+.avatar-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+
+  &.small {
+    height: 50px;
+    width: 50px;
+  }
+
+  &.medium {
+    height: 100px;
+    width: 100px;
+  }
+
+  &.large {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+#username {
+  display: inline-block;
+}
+
+.avatar-container > avatar {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  width: auto;
+  transform: translate(-50%, -50%);
+}
+
+.searcharea {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-smooth: always;
+  }
+}
+
+.searchelement {
+  margin-top: 15px;
+  color: white;
+  text-align: center;
+}
+.searchbox {
+  width: 100%;
+  height: 40px;
+  outline: none;
+}
+input#search.searchbox {
+  margin-right: 10px;
+}
+
+.button {
+  position: absolute;
+  top: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.name img {
+  height:65px;
+  margin-top: -105px;
+  margin-left: -42px;
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+div#search {
+  border-style: hidden;
+}
+
+input#search {
+  border-bottom-left-radius: $global-radius;
+  border-top-left-radius: $global-radius;
+}
+////////
+
+
+///// show page
+input#searchbutton {
+  border-bottom-right-radius: $global-radius;
+  border-top-right-radius: $global-radius;
+}
+
+.showtitle-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.showtitle-item {
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.card {
+  margin: 10px;
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  color: #272727;
+  border-radius: 2px;
+  .title {
+    line-height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+  .content {
+    padding: 1.3rem;
+    font-weight: 300;
+    border-radius: 0 0 2px 2px;
+  }
+  p {
+  margin: 0;
+  }
+  .action {
+    border-top: 1px solid rgba(160, 160, 160, 0.2);
+    padding: 1.3rem;
+  }
+  a {
+    color: #FFFFFF;
+    margin-right: 1.3rem;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  .image {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    .title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 1.3rem;
+      color: #fff;
+    }
+    img {
+      border-radius: 2px 2px 0 0;
+    }
+  }
+}
+
+.pagebar {
+  margin-top: 10px;
+}
+
+.elevator-card {
+  border-radius: $global-radius;
+
+  .content {
+    color: $iron;
+    background-color: $oil;
+    font-size: 25px;
+    clear: both;
+  }
+}
+
+.building-rating {
+  padding: 10px;
+  padding-top: 20px;
+}
+
+.review {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid $aluminum;
+}
+
+
+
+.button-span {
+  @include button(
+    $full-width: true
+  );
+  margin: 0;
+}
+
+
+#nav-avatar {
+  margin: 0 5px;
+  margin-top: 13px;
+}
+
+.vote-total {
+  position: relative;
+  left: 15px;
+  top: 10px;
+}

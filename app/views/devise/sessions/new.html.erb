@@ -1,0 +1,23 @@
+<h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="small-10 columns">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true %>
+  </div>
+
+  <div class="small-10 columns">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "off" %>
+  </div>
+
+  <div class="small-12 columns">
+    <%= f.submit "Log in", :class => 'button'%>
+  </div>
+<% end %>
+
+<div class="row">
+  <div class = "large-10 columns">
+    <span><%= render "devise/shared/links" %> <%= link_to "Back", elevators_path%></span>
+  </div>
+</div>
